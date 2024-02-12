@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.body{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: /*#273248*/#FFDAC7;
+  overflow: scroll;
+  z-index: -1;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+  display: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
