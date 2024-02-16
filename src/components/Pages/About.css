@@ -1,12 +1,12 @@
-.parentAbout{
-
-}
-
-.rectangles{
+.body_animation{
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
 }
 
 .rectangle_1_1 {
-
     float: left;
     border-radius: 10px;
     margin-left: 30px;
@@ -17,13 +17,14 @@
 }
 
 .rectangle_1_2 {
-
+    font-family: "Arial Rounded MT Bold", Monospaced;
     border-radius: 10px;
-    width: 380px;
-    height: 300px;
+{/*width: max-content;*/}
+    {/*height: 300px;*/}
     margin-top: 50px;
     margin-left: 100px;
     background-color: #BABD8E;
+    display: inline-block;
 }
 
 .rectangle_2_1 {
@@ -38,6 +39,7 @@
 }
 
 .rectangle_2_2 {
+    font-family: "Arial Rounded MT Bold", Monospaced;
     border-radius: 10px;
     width: 380px;
     height: 300px;
@@ -47,6 +49,7 @@
 }
 
 .skills{
+    text-align: left;
 
     padding-bottom: 200px;
     background-color: #EB6424;
@@ -60,6 +63,8 @@
 }
 
 .footer{
-
+    margin-top:1000px;
+    {/*position: absolute;
+    bottom: 10px;*/}
 }
 

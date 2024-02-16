@@ -2,13 +2,13 @@ import React, {useState} from "react";
 import styled from 'styled-components'
 import Burger from "./Burger";
 const Nav = styled.nav`
+        background-color: #FFDAC7;
         width: 100%;
         height: 55px;
         //border-bottom: 2px solid #385230;
         padding: 0 20px;
         display: flex;
         justify-content: space-between;
-        background-color: #FFDAC7;
         
         //.logo{
           //  padding: 15px 0;
@@ -43,10 +43,9 @@ const Navbar = () => {
         setIsMenuClicked(!isMenuClicked)
     }*/
 return (
-    <Nav>
+
         <Burger/>
-        <Nav/>
-    </Nav>
+
 
     /*  <div style={{width: '100%', height:'100vh'}}>
           <nav>
