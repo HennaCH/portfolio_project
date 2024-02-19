@@ -1,9 +1,16 @@
 .body_animation{
-    animation: fadeIn 4s;
+   /* animation: fadeIn 4s;
     -webkit-animation: fadeIn 3s;
     -moz-animation: fadeIn 3s;
     -o-animation: fadeIn 3s;
-    -ms-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;*/
+}
+
+.aboutBody{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
 .rectangle_1_1 {
@@ -13,7 +20,7 @@
     height: 300px;
     width: 500px;
     margin-top: 100px;
-    background-color: #FA9500;
+    background-color: #9f0b12;
 }
 
 .rectangle_1_2 {
@@ -23,7 +30,7 @@
     {/*height: 300px;*/}
     margin-top: 50px;
     margin-left: 100px;
-    background-color: #BABD8E;
+    background-color: #EFDECD;
     display: inline-block;
 }
 
@@ -35,7 +42,7 @@
     height: 300px;
     width: 500px;
     margin-top: 170px;
-    background-color: #BABD8E;
+    background-color:#EFDECD;
 }
 
 .rectangle_2_2 {
@@ -45,20 +52,19 @@
     height: 300px;
     margin-left: 100px;
     margin-top: -25px;
-    background-color: #FA9500;
+    background-color:#9f0b12;
 }
 
 .skills{
-    text-align: left;
+    padding-top: 5vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 5vw;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: "Arial Rounded MT Bold", Monospaced;
 
-    padding-bottom: 200px;
-    background-color: #EB6424;
-    /*z-index: -1;*/
-}
-
-.skills2{
-    padding-bottom: 200px;
-    background-color: #EB6424;
+    background-color: #EFDECD;
     /*z-index: -1;*/
 }
 
@@ -68,3 +74,31 @@
     bottom: 10px;*/}
 }
 
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hidden{
+        transition: none;
+    }
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.cvButton{
+    background-color: #9f0b12;
+    border-color: #a23a06;
+}
+
+.cvButton:hover{
+    background-color: #75060a;
+    border-color: #682600;
+}

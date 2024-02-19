@@ -6,7 +6,7 @@ function ProjectCarousel({ projectImages}) {
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex)
     }
-    let imagesToDisplay =  [sc]
+    let imagesToDisplay =  [sc,]
 
     return (
         <Carousel  activeIndex={index} onSelect={handleSelect} data-bs-theme="dark">
@@ -14,13 +14,26 @@ function ProjectCarousel({ projectImages}) {
                 <Carousel.Item key={idx}>
                     <img
                         src={image}
-                        width="1000px"
-                        className="rounded"
+                        width="500px"
+                        className="rounded "
                         alt={`Slide ${idx}`}
+                        style={{
+                            paddingBottom: "50px"
+                        }}
+                    />
+                    <img
+                        src={image}
+                        width="500px"
+                        className="rounded "
+                        alt={`Slide ${idx}`}
+                        style={{
+                            paddingBottom: "50px"
+                        }}
                     />
                 </Carousel.Item>
             ))}
         </Carousel>
     )
 }
+
 export default ProjectCarousel

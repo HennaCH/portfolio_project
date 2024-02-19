@@ -1,10 +1,19 @@
+.contactTitle{
+    font-family: Raleway;
+    margin-top: -70vw;
+    font-size: 15vw;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
 .circle {
-
-    height: 970px;
-    width: 1050px;
-    background-color: #AF4F41;
+    height: 73vw;
+    width: 83vw;
+    background-color: #b9402d;
     border-radius: 50%;
-    margin-left: -200px;
+    margin-left: -24.25vw;
     animation: fadeIn 2s;
     -webkit-animation: fadeIn 2s;
     -moz-animation: fadeIn 2s;
@@ -12,7 +21,116 @@
     -ms-animation: fadeIn 2s;
 }
 .form{
+    align-content: end;
     position: absolute;
-    top: 450px;
-    left: 230px;
+    top: 20.30vw;
+    left: 2.37vw;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+@media (prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.inputLabel{
+    font-family: "Copperplate Gothic Bold", serif;
+}
+
+.inputFieldNameEmail{
+    margin-top: 13px;
+    border-radius: 20px;
+    border: none;
+    height: 2.5vw;
+    width: 20vw;
+    resize: vertical;
+    margin-right:6vw;
+}
+
+.inputFieldMessage{
+    margin-left: 3vw;
+    border-radius: 20px;
+    border: none;
+    height: 10.5vw;
+    width: 30vw;
+    resize: vertical;
+}
+
+.inputField:nth-child(1){
+    transition-delay: 200ms;
+}
+.inputField:nth-child(2){
+    transition-delay: 400ms;
+}
+.inputField:nth-child(3){
+    transition-delay: 600ms;
+}
+
+.rectangleContact1{
+
+    background-color: black;
+    height: 1.5vw;
+    width: 30vw;
+    margin-left: 24vw;
+    margin-top: -5vw;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+.rectangleContact2{
+    background-color: black;
+    height: 30vw;
+    width: 1.5vw;
+    margin-left: 55vw;
+    margin-top: -45vw;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+
+@keyframes fadeIn {
+
+    0% {
+        opacity: 0; }
+    100% {
+        opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

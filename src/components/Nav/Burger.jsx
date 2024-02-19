@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import styled from "styled-components";
-import RightNav from "./rightNav";
 import {Link} from "react-router-dom";
 import "./Navbar.css"
 
@@ -55,11 +54,10 @@ const NavList = styled.ul`
         background-color: #273248;
         position: fixed;
         transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
-        top: 0.5rem;
+        padding-top: 2rem;
         right: 0;
         height: 100vh;
         width: 300px;
-        padding-top: 3.5rem;
         transition: transform 0.3s ease-in-out;
         li {
             color: #fff;

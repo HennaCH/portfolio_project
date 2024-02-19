@@ -6,13 +6,29 @@ import Button from "react-bootstrap/Button";
 import CV from './CV.pdf'
 import ProjectCarousel from "../ProjectCarousel";
 import sc from "../images/Screenshot (45).png"
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+        else{
+            entry.target.classList.remove('show')
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
 const About = () => {
 
-    return (
-        <div className="body ">
+     return (
+        <div className="body">
 
-            <ProjectCarousel projectImages={sc}/>
-            <div className="skills body_animation">
+            <ProjectCarousel projectImages={sc}></ProjectCarousel>
+            <div className="skills">
                 <strong>Motivated third year student interests in computer science and
                     design, more precisely CSS and creating colors. <br/>
                     I designed many different types of applications (video games, mobile applications, web
@@ -21,29 +37,32 @@ const About = () => {
                     providing support in their IT tasks.</strong> <br/>
 
                 <a href={CV} download="CV">
-                    <Button>CV Download</Button>
+                    <Button className="cvButton">CV Download</Button>
                 </a>
             </div>
 
 
 
-            <div className="rectangles body_animation">
+            <div className="pt-3">
 
                 <div className="rectangle_1_1">
                     <div className="rectangle_1_2">
                         <div className="text-center">
                         <h2>Education</h2>
-                        <p>Champlain College Saint-Lambert 2021 - 2024</p>
+                        <strong><p>Champlain College Saint-Lambert 2021 - 2024</p></strong>
                         </div>
 
                         <div className="text-start">
                             <h2 className="text-center">Experience</h2>
-                            <h6>Rabia Patel Art Project</h6>
-                            <ul>
+                            <h5>Rabia Patel Art Project</h5>
+
+                            <strong>
+                                <ul>
                                 <li>Create an online shop for a client to sell artworks</li>
                                 <li>Worked as developer (bring Full Stack additions)</li>
                                 <li>Used technologies such as React, Spring Boot, Jira, Scrum Methodology</li>
-                            </ul>
+                                </ul>
+                            </strong>
 
                             {/*<h6>Intern at Geek Squad</h6>
                             <ul>
@@ -52,12 +71,14 @@ const About = () => {
                                 <li></li>
                             </ul>*/}
 
-                            <h6>Pet Clinic Project</h6>
-                            <ul>
+                            <h5>Pet Clinic Project</h5>
+                            <strong>
+                                <ul>
                                 <li>Improve a web application for veterinary clinic to deal with clients, vets, and appointment</li>
                                 <li>Worked as developer with team (bring Full Stack improvements, such as a tax calculator)</li>
                                 <li>Developed project using AngularJS, MongoDB, and Agile and Scrum Methodology</li>
-                            </ul>
+                                </ul>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -84,18 +105,3 @@ const About = () => {
     );
 }
 export default About
-
-{/* <Donut
-                color="#ED6424"
-                size="11.72vw"
-                width={['2.52vw', '2.52vw', '7.82vw', '7.82vw']}
-                zIndex={2}
-            />*/
-}
-{/*<CircleGrid classname="float-end"
-                            position="relative"
-                            left="38vw"
-                            color="#6A951F"
-                            size="12vw"
-                            zIndex={2}/>*/
-}
