@@ -120,7 +120,7 @@ const About = () => {
 
                          <div className="row">
                              <div className="container">
-                                 <p className="text-start">Problem Solving</p>
+                                 <p className="text-start">Problem Solving !</p>
                                  <img src={problems} className="col-3 float-start p-2" style={{borderRadius: "20px"}}/>
                              </div>
                          </div>
