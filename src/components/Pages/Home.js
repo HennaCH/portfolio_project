@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
                 {/*<div className="rectangle"/>*/}
             </div>
-            <Footer/>
+            {/* <Footer/>*/}
         </div>
 
     );
