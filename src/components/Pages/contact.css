@@ -1,30 +1,31 @@
 .contactTitle{
-    font-family: Raleway;
-    margin-top: -70vw;
+    position: relative;
+    font-family: "Times New Roman", serif;
     font-size: 15vw;
     animation: fadeIn 2s;
     -webkit-animation: fadeIn 2s;
     -moz-animation: fadeIn 2s;
     -o-animation: fadeIn 2s;
-    -ms-animation: fadeIn 2s;
 }
 .circle {
-    height: 73vw;
-    width: 83vw;
+    display:flex;
+    height: 90%;
     background-color: #b9402d;
-    border-radius: 50%;
-    margin-left: -24.25vw;
-    animation: fadeIn 2s;
+    margin-bottom: 3%;
+   /* animation: fadeIn 2s;
     -webkit-animation: fadeIn 2s;
     -moz-animation: fadeIn 2s;
-    -o-animation: fadeIn 2s;
-    -ms-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;*/
 }
+
 .form{
-    align-content: end;
-    position: absolute;
-    top: 20.30vw;
-    left: 2.37vw;
+    padding: 3vw;
+    margin-left: 9vw;
+    margin-top: 140px;
+}
+
+label {
+    display: inline-block;
 }
 
 .hidden{
@@ -47,26 +48,22 @@
 }
 
 .inputLabel{
-    font-family: "Copperplate Gothic Bold", serif;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
 }
 
-.inputFieldNameEmail{
-    margin-top: 13px;
+.inputField{
+    padding: 12px;
     border-radius: 20px;
     border: none;
     height: 2.5vw;
-    width: 20vw;
     resize: vertical;
     margin-right:6vw;
 }
 
 .inputFieldMessage{
-    margin-left: 3vw;
     border-radius: 20px;
     border: none;
-    height: 10.5vw;
-    width: 30vw;
-    resize: vertical;
 }
 
 .inputField:nth-child(1){
@@ -79,33 +76,52 @@
     transition-delay: 600ms;
 }
 
+
+input[type=submit] {
+    background-color: #c2020a;
+    color: white;
+    padding: 15px 20px 37px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #d00d1c;
+}
+
 .rectangleContact1{
 
     background-color: black;
-    height: 1.5vw;
-    width: 30vw;
-    margin-left: 24vw;
-    margin-top: -5vw;
-    animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s;
-    -moz-animation: fadeIn 2s;
-    -o-animation: fadeIn 2s;
-    -ms-animation: fadeIn 2s;
+    height: 15.5px;
+    width: 273.4px;
+    margin-top: 6.52vw;
+    margin-left: -7.08vw;
+    animation:  float 5s ease-in-out infinite;
 }
 
 .rectangleContact2{
+    position: absolute;
     background-color: black;
-    height: 30vw;
-    width: 1.5vw;
-    margin-left: 55vw;
-    margin-top: -45vw;
-    animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s;
-    -moz-animation: fadeIn 2s;
-    -o-animation: fadeIn 2s;
-    -ms-animation: fadeIn 2s;
+    height: 15.5px;
+    width: 273.4px;
+    margin-left: -7.08vw;
+    animation:  float 5s ease-in-out infinite;
 }
 
+/*.rectangleContact2{
+    background-color: black;
+    float: right;
+    margin-top: -62.15vw;
+    height: 150px;
+    width: 15.5px;
+    animation:  float 6s ease-in-out infinite;;
+}/*
+
+.meImage {
+    border-radius: 20px;
+}
 
 @keyframes fadeIn {
 
@@ -134,3 +150,46 @@
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}
+
+
