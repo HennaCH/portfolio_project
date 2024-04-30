@@ -44,7 +44,7 @@ const About = () => {
                              I designed many different types of applications (video games, mobile applications, web
                              applications). <br/>
                              I am keen to take on challenges and help other by
-                             providing support in their IT tasks.</strong>
+                             providing support in their IT tasks!</strong>
                      </div>
 
                      <div className="row">
@@ -55,6 +55,7 @@ const About = () => {
 
              </div>
              </div>
+
              <div className="container col-10 mt-5"
                   style={{
                       backgroundColor: "#9f0b12",
@@ -102,30 +103,28 @@ const About = () => {
                              <h2 className="text-center">Interests</h2>
                          </div>
 
-                         <div className="row">
-                             <div className="container">
+                         <div className="row col-9 float-start">
+
                                  <p className="text-start">Graphic Design</p>
-                                 <img src={gemlvl1} className="col-9 float-start p-2" style={{borderRadius: "20px"}}/>
-                             </div>
+                                 <img src={gemlvl1} className="" style={{borderRadius: "20px"}}/>
                          </div>
 
-                         <div className="row">
-                         <div className="container">
+                         <div className="row col-9 float-end">
+
                              <p className="text-end">Cooking & Baking</p>
-                             <rect className="col-8 float-end" style={{backgroundColor: "pink", height: "132px", borderRadius: "20px"}}>
-                             <img src={pinkBowl} className="col-5" />
+                             <rect className="" style={{backgroundColor: "pink", height: "132px", borderRadius: "20px"}}>
+                             <img src={pinkBowl} className="float-end" style={{height: "132px"}}/>
                              </rect>
-                         </div>
+
                          </div>
 
-                         <div className="row">
-                             <div className="container">
+                         <div className="row col-9 float-start">
                                  <p className="text-start">Problem Solving !</p>
-                                 <rect className="col-8 float-start"
+                                 <rect className=""
                                        style={{backgroundColor: "#009999", height: "130px", borderRadius: "20px"}}>
-                                     <img src={problems} className="col-3 " style={{borderRadius: "20px"}}/>
+                                     <img src={problems} className="float-start" style={{height: "130px", borderRadius: "20px"}}/>
                                  </rect>
-                             </div>
+
                          </div>
                      </div>
                      <div className="col-1"/>
