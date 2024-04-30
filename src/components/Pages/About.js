@@ -105,15 +105,15 @@ const About = () => {
                          <div className="row">
                              <div className="container">
                                  <p className="text-start">Graphic Design</p>
-                                 <img src={gemlvl1} className="col-8 float-start p-2" style={{borderRadius: "20px"}}/>
+                                 <img src={gemlvl1} className="col-9 float-start p-2" style={{borderRadius: "20px"}}/>
                              </div>
                          </div>
 
                          <div className="row">
                          <div className="container">
                              <p className="text-end">Cooking & Baking</p>
-                             <rect className="col-4 float-end" style={{backgroundColor: "pink", height: "105px"}}>
-                             <img src={pinkBowl} className="col-4" />
+                             <rect className="col-8 float-end" style={{backgroundColor: "pink", height: "132px", borderRadius: "20px"}}>
+                             <img src={pinkBowl} className="col-5" />
                              </rect>
                          </div>
                          </div>
@@ -121,7 +121,10 @@ const About = () => {
                          <div className="row">
                              <div className="container">
                                  <p className="text-start">Problem Solving !</p>
-                                 <img src={problems} className="col-3 float-start p-2" style={{borderRadius: "20px"}}/>
+                                 <rect className="col-8 float-start"
+                                       style={{backgroundColor: "#009999", height: "130px", borderRadius: "20px"}}>
+                                     <img src={problems} className="col-3 " style={{borderRadius: "20px"}}/>
+                                 </rect>
                              </div>
                          </div>
                      </div>
