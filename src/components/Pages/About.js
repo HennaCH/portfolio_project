@@ -44,7 +44,7 @@ const About = () => {
                              I designed many different types of applications (video games, mobile applications, web
                              applications). <br/>
                              I am keen to take on challenges and help other by
-                             providing support in their IT tasks!</strong>
+                             providing support in their IT tasks.</strong>
                      </div>
 
                      <div className="row">
