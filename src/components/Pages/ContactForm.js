@@ -46,10 +46,14 @@ const ContactForm = () => {
         setSend({ ...send, [e.target.name]: e.target.value });
     };
 
+    const consoleTest = () => {
+        console.log("hey you sent an email")
+    }
 
     const sendEmail = (e) => {
-       // e.preventDefault();
-        validation(send.email, send.name, send.message, send.subject);
+       e.preventDefault();
+        //validation(send.email, send.name, send.message, send.subject);
+
         emailjs
             .sendForm('service_tm9rp3p', 'template_zy8lf7p', form.current, {
                 publicKey: 'qSym0XF-bXjVpzPAa',
