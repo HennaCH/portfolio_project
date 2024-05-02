@@ -56,15 +56,15 @@ const About = () => {
              </div>
              </div>
 
-             <div className="container col-10 mt-5"
+             <div className="container col-12 mt-5"
                   style={{
                       backgroundColor: "#9f0b12",
                       borderRadius: "20px"
                   }}>
 
-                 <div className="row p-sm-4">
+                 <div className="row p-4">
                      <div className="col-1"/>
-                     <div className="rectangle_1_2 col-sm-5">
+                     <div className="rectangle_1_2 col-5">
                          <div className="text-center">
                              <h2>Education</h2>
                              <strong><p>Champlain College Saint-Lambert 2021 - 2024</p></strong>
@@ -98,7 +98,7 @@ const About = () => {
                          </div>
                      </div>
 
-                     <div className="rectangle_2_2 col-sm-5">
+                     <div className="rectangle_2_2 col-5">
                          <div className="row">
                              <h2 className="text-center">Interests</h2>
                          </div>
@@ -136,8 +136,8 @@ const About = () => {
                  <h2 className="">Projects</h2>
                  <div className="container p-3">
                      <div className="row">
-                         <div className="col-sm-6">
-                             <div className="row m-3 col-sm-12">
+                         <div className="col-6">
+                             <div className="row m-3 col-12">
                                  <a href="https://rabiapatelart.com/" style={{
                                      backgroundColor: "#9f0b12",
                                      borderRadius: "25px",
@@ -153,8 +153,8 @@ const About = () => {
                              </div>
                          </div>
 
-                         <div className="col-sm-6">
-                         <div className="row m-3 col-sm-12">
+                         <div className="col-6">
+                         <div className="row m-3 col-12">
                              <a href="https://rabiapatelart.com/" style={{
                                  backgroundColor: " #9f0b12",
                                  borderRadius: "25px",
@@ -171,8 +171,8 @@ const About = () => {
                      </div>
 
                      <div className="row">
-                     <div className="col-sm-6">
-                             <div className="row m-3 col-sm-12">
+                     <div className="col-6">
+                             <div className="row m-3 col-12">
                                  <a href="https://github.com/ThomasBedard/GemGrabber.git" style={{
                                      backgroundColor: " #9f0b12",
                                      borderRadius: "25px",
@@ -186,8 +186,8 @@ const About = () => {
                                  </a>
                              </div>
                      </div>
-                         <div className="col-sm-6">
-                         <div className="row m-3 col-sm-12">
+                         <div className="col-6">
+                         <div className="row m-3 col-12">
                              <a href="https://github.com/ThomasBedard/GemGrabber.git" style={{
                                  backgroundColor: " #9f0b12",
                                  borderRadius: "25px",
@@ -204,8 +204,8 @@ const About = () => {
                      </div>
 
                      <div className="row">
-                     <div className="col-sm-6">
-                             <div className="row m-3  col-sm-12">
+                     <div className="col-6">
+                             <div className="row m-3  col-12">
                                  <a href="https://github.com/HennaCH/Fun4Kidz.git" style={{
                                      backgroundColor: " #9f0b12",
                                      borderRadius: "25px",
@@ -219,8 +219,8 @@ const About = () => {
                                  </a>
                              </div>
                      </div>
-                         <div className="col-sm-6">
-                         <div className="row m-3  col-sm-12">
+                         <div className="col-6">
+                         <div className="row m-3  col-12">
                              <a href="https://github.com/HennaCH/Fun4Kidz.git" style={{
                                  backgroundColor: " #9f0b12",
                                  borderRadius: "25px",
