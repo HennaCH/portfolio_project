@@ -115,11 +115,45 @@ const About = () => {
                                      </li>
                                  </ul>
                              </strong>
+
+                             <h5>Geek Squad Intern</h5>
+                             <strong>
+                                 <ul>
+                                     <li>Helped clients with their devices, such as configuring their laptops,
+                                         transferring their data and diagnosing their computers.
+                                     </li>
+                                     <li>
+                                         Worked as an IT Technician
+                                     </li>
+                                     <li>
+                                         Tasks done using Windows, data transfer hardware (toaster),
+                                         and USB keys that would contain specific app to accomplish the tasks.
+                                     </li>
+                                 </ul>
+                             </strong>
+
+
+                             <div className="text-start">
+                                 <h2 className="text-center">Skills</h2>
+                                 <strong>
+                                     <ul>
+                                         <li>Android - <text style={{fontStyle: "italic"}}>Advanced</text></li>
+                                         <li>SQL - <text style={{fontStyle: "italic"}}>Advanced</text></li>
+                                         <li>React - <text style={{fontStyle: "italic"}}>Advanced</text></li>
+                                         <li>Java - <text style={{fontStyle: "italic"}}>Intermediate</text></li>
+                                         <li>PHP - <text style={{fontStyle: "italic"}}>Intermediate</text></li>
+                                         <li>iOS - <text style={{fontStyle: "italic"}}>Intermediate</text></li>
+                                         <li>C# - <text style={{fontStyle: "italic"}}>Intermediate</text></li>
+                                     </ul>
+                                 </strong>
+                             </div>
+
+
                          </div>
                      </div>
 
                      <div className="rectangle_2_2 col-5">
-                         <div className="row">
+                         <div className="">
                              <h2 className="text-center">Interests</h2>
                          </div>
 
@@ -140,7 +174,7 @@ const About = () => {
                          </div>
 
                          <div className="row col-9 float-start">
-                             <p className="text-start">Problem Solving !</p>
+                         <p className="text-start">Problem Solving !</p>
                              <rect className=""
                                    style={{backgroundColor: "#009999", height: "130px", borderRadius: "20px"}}>
                                  <img src={problems} className="float-start"
