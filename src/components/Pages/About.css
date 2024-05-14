@@ -5,6 +5,58 @@
     -o-animation: fadeIn 3s;
     -ms-animation: fadeIn 3s;*/
 }
+.hi{
+    font-size: 55px;
+    color: #e80a1d;
+}
+.hi:hover{
+    color: #6cbde1;
+    background-color: #e80a1d;
+
+}
+
+.champlain{
+    text-decoration:underline wavy #e09c09;
+}
+
+@keyframes highlight {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: -100%;
+    }
+}
+
+
+.design:hover{
+    animation-name: highlight;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+    background-size: 200%;
+
+    /*background-image: linear-gradient(to left, #4dc431 50%, #e83893 50%),
+    linear-gradient(transparent 50%,transparent 100%);*/
+    background-image: linear-gradient(to right, #e83893 50%, transparent 50%),
+    linear-gradient(transparent 50%, #4dc431 50%);
+}
+
+.geek{
+    font-size: 35px;
+    font-family: "Copperplate Gothic", fantasy, cursive;
+}
+.squad{
+    color: orangered;
+    font-size: 35px;
+    font-family: "Copperplate Gothic", fantasy, cursive;
+}
+
+.concordia{
+    font-size: 28px;
+    color: #729cd3;
+    font-style: italic;
+}
 
 .rectangle_1_1 {
     position: relative;
@@ -36,7 +88,7 @@
     border-radius: 10px;
     height: 300px;
     width: 500px;
-    margin-top: 170px;
+    /*margin-top: 170px;*/
     background-color:#EFDECD;
 }
 
@@ -56,7 +108,8 @@
     padding-bottom: 5vw;
     text-align: justify;
     text-justify: inter-word;
-    font-family: "Arial Rounded MT Bold", Monospaced;
+    font-size: 25px;
+    /*font-family: "Arial Rounded MT Bold", Monospaced;*/
     background-color: #EFDECD;
     /*z-index: -1;*/
 }
@@ -150,6 +203,12 @@
     transition: .5s ease;
     backface-visibility: hidden;
     /*box-shadow: -10px 10px #303a52;*/
+}
+
+.projects{
+    color: #0f283a;
+    font-size: 35px;
+    background-color: #9f0b12;
 }
 
 [class*="col-"] {

@@ -39,10 +39,30 @@ const About = () => {
                              <img src={me} className="col-12 meImage"/>
                          </div>
 
-                         <strong className="col-9">Hi! I am motivated student interested in computer science and
-                             design, more precisely professional CSS Design and color combiation. <br/>
-                             I designed many different types of applications (video games, mobile applications, web
-                             applications). <br/>
+                         <strong className="col-12">
+                             <text className="hi"> → Hi ! ←</text>
+                             <br/>
+                             I am a student in computer science at <text className="champlain">Champlain College
+                             .</text> <br/> <br/>
+
+                             <text className="design">I am interested in graphic design, more precisely professional CSS
+                                 Design and color combination. I designed many different types of applications (video
+                                 games, mobile applications, web
+                                 applications).
+                             </text>
+                             <br/><br/>
+
+                             I have worked as <text className="geek">Geek </text>
+                             <text className="squad">Squad </text>
+                             as a IT technician intern, which made me gain
+                             knowledge
+                             in computer hardware. I plan on pursuing in computer engineering at <text
+                             className="concordia"> Concordia
+                             University </text>. <br/> <br/>
+
+                             I am also interested in animal care.
+                             When I don't have work to do, I like spending my time with my birds. <br/> <br/>
+
                              I am keen to take on challenges and help other by
                              providing support in their IT tasks.</strong>
                      </div>
@@ -53,7 +73,7 @@ const About = () => {
                          </a>
                      </div>
 
-             </div>
+                 </div>
              </div>
 
              <div className="container col-12 mt-5"
@@ -105,25 +125,27 @@ const About = () => {
 
                          <div className="row col-9 float-start">
 
-                                 <p className="text-start">Graphic Design</p>
-                                 <img src={gemlvl1} className="" style={{borderRadius: "20px"}}/>
+                             <p className="text-start">Graphic Design</p>
+                             <img src={gemlvl1} className="" style={{borderRadius: "20px"}}/>
                          </div>
 
                          <div className="row col-9 float-end">
 
                              <p className="text-end">Cooking & Baking</p>
-                             <rect className="" style={{backgroundColor: "pink", height: "132px", borderRadius: "20px"}}>
-                             <img src={pinkBowl} className="float-end" style={{height: "132px"}}/>
+                             <rect className=""
+                                   style={{backgroundColor: "pink", height: "132px", borderRadius: "20px"}}>
+                                 <img src={pinkBowl} className="float-end" style={{height: "132px"}}/>
                              </rect>
 
                          </div>
 
                          <div className="row col-9 float-start">
-                                 <p className="text-start">Problem Solving !</p>
-                                 <rect className=""
-                                       style={{backgroundColor: "#009999", height: "130px", borderRadius: "20px"}}>
-                                     <img src={problems} className="float-start" style={{height: "130px", borderRadius: "20px"}}/>
-                                 </rect>
+                             <p className="text-start">Problem Solving !</p>
+                             <rect className=""
+                                   style={{backgroundColor: "#009999", height: "130px", borderRadius: "20px"}}>
+                                 <img src={problems} className="float-start"
+                                      style={{height: "130px", borderRadius: "20px"}}/>
+                             </rect>
 
                          </div>
                      </div>
@@ -133,7 +155,7 @@ const About = () => {
 
              <br/>
              <div className="m-5">
-                 <h2 className="">Projects</h2>
+                 <h2 className="projects">Projects</h2>
                  <div className="container p-3">
                      <div className="row">
                          <div className="col-6">
@@ -154,24 +176,24 @@ const About = () => {
                          </div>
 
                          <div className="col-6">
-                         <div className="row m-3 col-12">
-                             <a href="https://rabiapatelart.com/" style={{
-                                 backgroundColor: " #9f0b12",
-                                 borderRadius: "25px",
-                                 boxShadow: "-10px 10px #303a52",
-                                 textDecoration: "none"
-                             }} className="linkContainer">
-                                 <img src={graphicDesign} className="imageBackRight col-12"/>
-                                 <div className="middle">
-                                     <div className="text">See Project</div>
-                                 </div>
-                             </a>
-                         </div>
+                             <div className="row m-3 col-12">
+                                 <a href="https://rabiapatelart.com/" style={{
+                                     backgroundColor: " #9f0b12",
+                                     borderRadius: "25px",
+                                     boxShadow: "-10px 10px #303a52",
+                                     textDecoration: "none"
+                                 }} className="linkContainer">
+                                     <img src={graphicDesign} className="imageBackRight col-12"/>
+                                     <div className="middle">
+                                         <div className="text">See Project</div>
+                                     </div>
+                                 </a>
+                             </div>
                          </div>
                      </div>
 
                      <div className="row">
-                     <div className="col-6">
+                         <div className="col-6">
                              <div className="row m-3 col-12">
                                  <a href="https://github.com/ThomasBedard/GemGrabber.git" style={{
                                      backgroundColor: " #9f0b12",
@@ -185,26 +207,26 @@ const About = () => {
                                      </div>
                                  </a>
                              </div>
-                     </div>
-                         <div className="col-6">
-                         <div className="row m-3 col-12">
-                             <a href="https://github.com/ThomasBedard/GemGrabber.git" style={{
-                                 backgroundColor: " #9f0b12",
-                                 borderRadius: "25px",
-                                 boxShadow: "-10px 10px #303a52",
-                                 textDecoration: "none"
-                             }} className="linkContainer">
-                                 <img src={gemlvl2} className="imageBackRight col-12"/>
-                                 <div className="middle">
-                                     <div className="text">See Project</div>
-                                 </div>
-                             </a>
                          </div>
+                         <div className="col-6">
+                             <div className="row m-3 col-12">
+                                 <a href="https://github.com/ThomasBedard/GemGrabber.git" style={{
+                                     backgroundColor: " #9f0b12",
+                                     borderRadius: "25px",
+                                     boxShadow: "-10px 10px #303a52",
+                                     textDecoration: "none"
+                                 }} className="linkContainer">
+                                     <img src={gemlvl2} className="imageBackRight col-12"/>
+                                     <div className="middle">
+                                         <div className="text">See Project</div>
+                                     </div>
+                                 </a>
+                             </div>
                          </div>
                      </div>
 
                      <div className="row">
-                     <div className="col-6">
+                         <div className="col-6">
                              <div className="row m-3  col-12">
                                  <a href="https://github.com/HennaCH/Fun4Kidz.git" style={{
                                      backgroundColor: " #9f0b12",
@@ -218,21 +240,21 @@ const About = () => {
                                      </div>
                                  </a>
                              </div>
-                     </div>
-                         <div className="col-6">
-                         <div className="row m-3  col-12">
-                             <a href="https://github.com/HennaCH/Fun4Kidz.git" style={{
-                                 backgroundColor: " #9f0b12",
-                                 borderRadius: "25px",
-                                 boxShadow: "-10px 10px #303a52",
-                                 textDecoration: "none"
-                             }} className="linkContainer">
-                                 <img src={fun4KidzFlower} className="imageBackRight col-12"/>
-                                 <div className="middle">
-                                     <div className="text">See Project</div>
-                                 </div>
-                             </a>
                          </div>
+                         <div className="col-6">
+                             <div className="row m-3  col-12">
+                                 <a href="https://github.com/HennaCH/Fun4Kidz.git" style={{
+                                     backgroundColor: " #9f0b12",
+                                     borderRadius: "25px",
+                                     boxShadow: "-10px 10px #303a52",
+                                     textDecoration: "none"
+                                 }} className="linkContainer">
+                                     <img src={fun4KidzFlower} className="imageBackRight col-12"/>
+                                     <div className="middle">
+                                         <div className="text">See Project</div>
+                                     </div>
+                                 </a>
+                             </div>
                          </div>
                      </div>
                  </div>

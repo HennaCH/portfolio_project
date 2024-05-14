@@ -83,14 +83,17 @@ const ContactForm = () => {
 
     return(
 
-        <div className="body">
-            <h1 className="contactTitle">Contact Me</h1>
+        <div className="body ">
+
+
+            <h1 className="contactTitle ">Contact Me</h1>
+
             <div className="col-lg-3 col-sm-3"/>
+
             <div className="circle container col-lg-6 col-sm-6">
-                <div className="col-8" style={{alignContent:"center"}}>
+                <div className="col-8" style={{alignContent: "center"}}>
                     <form ref={form} onSubmit={sendEmail}
-                          style={{backgroundColor: "#f1d2b6", borderRadius: "20px", boxShadow: "-1vw 1vw #d9aa90"}}
-                          className="form col-12">
+                          className="form col-12 contactForm">
                         <div className="row">
 
                             <div className="col-6 text-start">
@@ -119,11 +122,16 @@ const ContactForm = () => {
                             </div>
                         </div>
                     </form>
-                    <div className="rectangleContact1 "/>
-                    <div className="rectangleContact2 "/>
+                    <div>
+                        {/*
+                        <div className="rectangleContact1 "/>
+                        <div className="rectangleContact2 "/>*/}
+                    </div>
+
                 </div>
             </div>
             <div className="col-lg-3 col-sm-3"/>
+
 
         </div>
     )

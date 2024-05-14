@@ -21,7 +21,6 @@
 .form{
     padding: 3vw;
     margin-left:27%;
-    margin-top: 140px;
 }
 
 label {
@@ -111,6 +110,14 @@ input[type=submit]:hover {
     animation:  float 5s ease-in-out infinite;
 }
 
+.circleContact1{
+    height: 60vw;
+    width: 65vw;
+    background-color: #9f0b12;
+    border-radius: 50%;
+    margin-left: -22%;
+}
+
 /*.rectangleContact2{
     background-color: black;
     float: right;
@@ -170,6 +177,13 @@ input[type=submit]:hover {
     width: 75%;
     margin-top: 6px;
 }
+ */
+
+.contactForm{
+    background-color: #f1d2b6;
+    border-radius: 20px;
+    box-shadow: -1vw 1vw #d9aa90
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -198,6 +212,18 @@ input[type=submit]:hover {
     width: 100%;
     input[type=submit] {margin-left: -2px}
     .inputLabel { margin: 1%;}
+
+}
+@media only screen and (max-width: 600px) {
+    .contactForm{
+        margin-top: -10px;
+    }
+    .form{
+        margin-left: 4px;
+    }
+    .rectangleContact1{
+
+    }
 
 }
 @media only screen and (min-width: 600px) {
