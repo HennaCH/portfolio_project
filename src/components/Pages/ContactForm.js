@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
 import './contact.css'
+import {Link} from "react-router-dom";
 
 const ContactForm = () => {
     const form = useRef();
@@ -122,12 +123,11 @@ const ContactForm = () => {
                             </div>
                         </div>
                     </form>
-                    <div>
-                        {/*
-                        <div className="rectangleContact1 "/>
-                        <div className="rectangleContact2 "/>*/}
-                    </div>
-
+                    {/*<div className="row">
+                        <h1 className="col-12 pt-5">Contact</h1>
+                        <Link className="email col-7"
+                              onClick={() => window.location = 'mailto:hennacheung@gmail.com'}>hennacheung@gmail.com</Link>
+                    </div>*/}
                 </div>
             </div>
             <div className="col-lg-3 col-sm-3"/>

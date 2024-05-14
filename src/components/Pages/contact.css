@@ -18,6 +18,13 @@
     -o-animation: fadeIn 2s;*/
 }
 
+.email{
+    text-decoration-line: overline;
+    text-decoration-style: wavy;
+    color: blanchedalmond;
+
+}
+
 .form{
     padding: 3vw;
     margin-left:27%;

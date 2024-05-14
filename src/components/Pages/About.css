@@ -94,7 +94,7 @@
 
 .rectangle_2_2 {
     margin: 1vw;
-    font-family: "Arial Rounded MT Bold", Monospaced;
+    font-family: "Courier, monospace";
     border-radius: 10px;
 {/*height: 300px;*/}
     padding: 10vw;
@@ -151,8 +151,6 @@
 
 .imageBackLeft{
     opacity: 1;
-    margin: 5px;
-    padding: 10px;
     display: block;
     /*background-color: #9f0b12;*/
     border-radius: 20px;
@@ -166,6 +164,7 @@
 
 
 .linkContainer:hover .imageBackLeft{
+
     opacity: 0.3;
 }
 
@@ -177,8 +176,7 @@
      opacity: 1;
 }
 .text {
-    background-color: #303a52;
-    color: white;
+    color: #0f283a;
     border-radius: 20px;
 }
 
@@ -197,7 +195,6 @@
     opacity: 1;
     margin: 5px;
     padding: 10px;
-    display: block;
     /*background-color: #9f0b12;*/
     border-radius: 20px;
     transition: .5s ease;
@@ -206,9 +203,15 @@
 }
 
 .projects{
-    color: #0f283a;
+
+    color: blanchedalmond;
     font-size: 35px;
     background-color: #9f0b12;
+}
+
+.projectDescription{
+    color: #b9402d;
+    margin-left: 1%;
 }
 
 [class*="col-"] {

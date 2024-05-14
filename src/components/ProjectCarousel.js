@@ -5,19 +5,22 @@ function ProjectCarousel({ projectImages}) {
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex)
     }
-    let imagesToDisplay =  []
+    let imagesToDisplay =  projectImages
 
     return (
-        <Carousel  activeIndex={index} onSelect={handleSelect} data-bs-theme="dark">
+        <Carousel  activeIndex={index} onSelect={handleSelect} data-bs-theme="dark" className="col-12" style={{
+            marginTop: "20px",
+            marginLeft: "1%",
+            paddingBottom: "20px"
+        }}>
             {imagesToDisplay.map((image, idx) => (
                 <Carousel.Item key={idx}>
                     <img
                         src={image}
-                        width="500px"
-                        className="rounded "
+                        width="100%"
                         alt={`Slide ${idx}`}
                         style={{
-                            paddingBottom: "50px"
+                            borderRadius: "20px"
                         }}
                     />
 
